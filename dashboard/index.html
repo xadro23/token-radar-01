@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAUNCH RADAR — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark">◎</div>
+      <div>
+        <h1>LAUNCH RADAR</h1>
+        <p class="tagline">Every protocol with no token yet, ranked by what its launch would be worth</p>
+      </div>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <nav class="views" id="viewnav">
+    <button class="viewbtn active" data-view="board">◤ BOARD</button>
+    <button class="viewbtn" data-view="filter">◥ RADAR SCAN</button>
+    <button class="viewbtn" data-view="method">◈ MODEL</button>
+    <span class="spacer"></span>
+    <input id="search" type="search" placeholder="Search name, chain, category…" autocomplete="off">
+  </nav>
+
+  <main id="main"></main>
+
+  <footer class="foot">
+    <span id="footmeta"></span>
+    <span class="foot-right">Implied value is this radar's own claim, not a prediction of a launch. Data: <span id="footsrc"></span></span>
+  </footer>
+</div>
+<script src="radar-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
